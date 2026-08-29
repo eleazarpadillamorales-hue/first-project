@@ -144,7 +144,12 @@
   <ItemGroup>
     <ClInclude Include="Cancha.h" />
     <ClInclude Include="Cliente.h" />
+    <ClInclude Include="ColeccionCanchas.h" />
+    <ClInclude Include="ColeccionClientes.h" />
+    <ClInclude Include="ColeccionReservas.h" />
+    <ClInclude Include="RegistroEspera.h" />
     <ClInclude Include="Reserva.h" />
+    <ClInclude Include="SistemaGimnasio.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

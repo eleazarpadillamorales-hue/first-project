@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\primer proyecto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\primer proyecto.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\Reserva.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Cancha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\Cancha.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Cliente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\Cliente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Reserva.h",
-              "DocumentMoniker": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Reserva.h",
-              "RelativeDocumentMoniker": "primer proyecto\\Reserva.h",
-              "ToolTip": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Reserva.h",
-              "RelativeToolTip": "primer proyecto\\Reserva.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-28T01:08:12.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cancha.h",
-              "DocumentMoniker": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Cancha.h",
-              "RelativeDocumentMoniker": "primer proyecto\\Cancha.h",
-              "ToolTip": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Cancha.h",
-              "RelativeToolTip": "primer proyecto\\Cancha.h",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAADoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-28T00:43:58.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.h",
-              "DocumentMoniker": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Cliente.h",
-              "RelativeDocumentMoniker": "primer proyecto\\Cliente.h",
-              "ToolTip": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\Cliente.h",
-              "RelativeToolTip": "primer proyecto\\Cliente.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-28T00:18:22.634Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -75,9 +24,9 @@
               "RelativeDocumentMoniker": "primer proyecto\\primer proyecto.cpp",
               "ToolTip": "C:\\Users\\elipm\\OneDrive\\Documents\\GitHub\\first-project\\primer proyecto\\primer proyecto\\primer proyecto.cpp",
               "RelativeToolTip": "primer proyecto\\primer proyecto.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAHIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-28T00:16:52.187Z",
+              "WhenOpened": "2026-08-29T21:14:54.261Z",
               "EditorCaption": ""
             }
           ]

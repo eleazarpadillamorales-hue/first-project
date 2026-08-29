@@ -131,7 +131,12 @@
             "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\cliente.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
             "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\cancha.h",
-            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\reserva.h"
+            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\reserva.h",
+            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\registroespera.h",
+            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\coleccionclientes.h",
+            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\coleccioncanchas.h",
+            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\coleccionreservas.h",
+            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\sistemagimnasio.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
