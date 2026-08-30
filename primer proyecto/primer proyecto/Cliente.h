@@ -14,38 +14,16 @@ private:
 
 public:
     // Constructor por defecto
-    Cliente() {
-        this->id = "";
-        this->nombre = "";
-        this->telefono = "";
-    }
-
+    Cliente();
     // Constructor con parámetros
-    Cliente(string id, string nombre, string telefono) {
-        this->id = id;
-        this->nombre = nombre;
-        this->telefono = telefono;
-    }
-
+    Cliente(string id, string nombre, string telefono);
+    //Destructor
+    ~Cliente();
     // Métodos Getters (Consultores)
-    string getId() const {
-        return id;
-    }
-
-    string getNombre() const {
-        return nombre;
-    }
-
-    string getTelefono() const {
-        return telefono;
-    }
-
+    string getId();
+    string getNombre();
+    string getTelefono();
     // Métodos Setters (Modificadores)
-    void setNombre(string nombre) {
-        this->nombre = nombre;
-    }
-
-    void setTelefono(string telefono) {
-        this->telefono = telefono;
-    }
+    void setNombre(string nombre);
+    void setTelefono(string telefono);
 };

@@ -139,6 +139,8 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cancha.cpp" />
+    <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="primer proyecto.cpp" />
   </ItemGroup>
   <ItemGroup>

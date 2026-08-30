@@ -111,7 +111,7 @@ void moduloClientes() {
         case 1: cout << "\n[*] Ejecutando: Registrar cliente...\n"; system("pause"); break;
         case 2: cout << "\n[*] Ejecutando: Listar clientes...\n"; system("pause"); break;
         case 3: cout << "\n[*] Ejecutando: Buscar por ID...\n"; system("pause"); break;
-        case 4: cout << "\n[*] Ejecutando: Ver reservas del cliente...\n"; system("pause"); break;S
+        case 4: cout << "\n[*] Ejecutando: Ver reservas del cliente...\n"; system("pause"); break;
         case 5: break;
         default: cout << "\n[!] Opcion invalida.\n"; system("pause");
         }
