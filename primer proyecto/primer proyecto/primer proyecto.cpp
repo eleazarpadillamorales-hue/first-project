@@ -108,7 +108,22 @@ void moduloClientes() {
         cin >> opcion;
 
         switch (opcion) {
-        case 1: cout << "\n[*] Ejecutando: Registrar cliente...\n"; system("pause"); break;
+        case 1: {
+            string id;
+            string nombre;
+            string telefono;
+            cout << "\n Ingrese el nombre del cliente\n";
+            cin >> nombre;
+            cout << "\n Ingrese el nombre del Id o numero de cedula\n";
+            cin >> id;
+            cout << "\n Ingrese el nombre del telefono \n";
+            cin >> telefono;
+            cout << "\n Cliente registrado con los siguientes datos: \n" << endl;
+            cout<< nombre        << " " << id <<" " << telefono << " ";
+            Cliente Cliente_1( nombre,  id, telefono);
+            system("pause"); break;
+        }
+
         case 2: cout << "\n[*] Ejecutando: Listar clientes...\n"; system("pause"); break;
         case 3: cout << "\n[*] Ejecutando: Buscar por ID...\n"; system("pause"); break;
         case 4: cout << "\n[*] Ejecutando: Ver reservas del cliente...\n"; system("pause"); break;
