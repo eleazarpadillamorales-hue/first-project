@@ -8,21 +8,18 @@ using namespace std;
 class ColeccionClientes{
 private:
     // Atributos privados
-    Cliente** clientes{};
-    int cantidad{};
-    int capacidad{};
+    Cliente* clientes[100];
+    int cantidad;   
 public:
     // Constructor por con parametros no se hace el por defecto porque no existe 
-    ColeccionClientes(int capacidad= 100 ) {};
+    ColeccionClientes();
     //Destructor
-    ~ColeccionClientes() {};
+    ~ColeccionClientes();
     // metodos gettters y setters para esta clase
-    bool agregarCliente(Cliente* Cliente) {};
-    Cliente * buscarPorId(string id) {};
+    bool agregarCliente(Cliente* Cliente);
+    Cliente * buscarPorId(string id);
     //metodo para mostrar
-    void listarClientes() {};
-    int getCantidad() {};
-    int getCapacidad() {};
-
+    void listarClientes();
+    int getCantidad();
 };
 

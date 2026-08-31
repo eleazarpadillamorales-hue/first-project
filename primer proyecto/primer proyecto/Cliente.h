@@ -26,4 +26,5 @@ public:
     // Métodos Setters (Modificadores)
     void setNombre(string nombre);
     void setTelefono(string telefono);
+    void mostrar();
 };

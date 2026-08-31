@@ -1,10 +1,10 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\cliente.cpp",
+        "Source": "c:\\users\\andre\\onedrive\\documents\\proyecto 1\\first-project\\primer proyecto\\primer proyecto\\cliente.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\elipm\\onedrive\\documents\\github\\first-project\\primer proyecto\\primer proyecto\\cliente.h",
+            "c:\\users\\andre\\onedrive\\documents\\proyecto 1\\first-project\\primer proyecto\\primer proyecto\\cliente.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\yvals_core.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vcruntime.h",

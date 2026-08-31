@@ -35,3 +35,9 @@ void Cliente::setNombre(string nombre) {
 void Cliente::setTelefono(string telefono) {
     this->telefono = telefono;
 }
+void Cliente::mostrar() {
+    cout << "La informacion del cliente es: " << endl;
+    cout << "Nombre: " << nombre << endl;
+    cout << "Identificacion: " << endl;
+    cout << "Telefono: " << telefono << endl;
+}
