@@ -4,11 +4,12 @@
 #include "Cliente.h"
 
 using namespace std;
+const int capacidad = 100;
 
 class ColeccionClientes{
 private:
     // Atributos privados
-    Cliente* clientes[100];
+    Cliente* clientes[capacidad];
     int cantidad;   
 public:
     // Constructor por con parametros no se hace el por defecto porque no existe 
@@ -16,10 +17,10 @@ public:
     //Destructor
     ~ColeccionClientes();
     // metodos gettters y setters para esta clase
-    bool agregarCliente(Cliente* Cliente);
-    Cliente * buscarPorId(string id);
+    void agregarCliente(Cliente Cliente);
+    Cliente buscarPorId(string id);
     //metodo para mostrar
-    void listarClientes();
+    void listaClientes();
     int getCantidad();
 };
 
