@@ -24,6 +24,9 @@
     <ClCompile Include="Cancha.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ColeccionReservas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cancha.h">

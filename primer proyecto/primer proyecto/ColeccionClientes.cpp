@@ -37,7 +37,7 @@ Cliente* ColeccionClientes::buscarPorId(string id) {
 }
 
 // Muestra en consola la lista de clientes registrados
-void ColeccionClientes::listarClientes() const {
+void ColeccionClientes::listaClientes() const {
     cout << "Cantidad de clientes: " << cantidad << endl;
     for (int i = 0;i < cantidad;i++) {
         clientes[i]->mostrar();
@@ -47,8 +47,4 @@ void ColeccionClientes::listarClientes() const {
 
 int ColeccionClientes::getCantidad() const {
     return this->cantidad;
-}
-
-int ColeccionClientes::getCapacidad() const {
-    return this->capacidad;
 }
