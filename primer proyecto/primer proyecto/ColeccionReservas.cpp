@@ -45,6 +45,6 @@ void ColeccionReservas::listaClientes(){
     }
 }
 
-int ColeccionReservas::getCantidad(){
+int ColeccionReservas::getCantidad() const {
     return this->cantidad;
 }

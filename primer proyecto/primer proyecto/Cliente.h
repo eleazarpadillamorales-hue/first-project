@@ -20,9 +20,9 @@ public:
     //Destructor
     ~Cliente();
     // Métodos Getters (Consultores)
-    string getId();
-    string getNombre();
-    string getTelefono();
+    string getId() const;
+    string getNombre() const;
+    string getTelefono() const;
     // Métodos Setters (Modificadores)
     void setNombre(string nombre);
     void setTelefono(string telefono);

@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\ColeccionReservas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\ColeccionClientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:primer proyecto\\ColeccionClientes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionCanchas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\ColeccionCanchas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|solutionrelative:primer proyecto\\ColeccionClientes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6BC18D9-263A-43A5-BD73-B255C3440BB5}|primer proyecto\\primer proyecto.vcxproj|C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "primer proyecto\\ColeccionReservas.cpp",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionReservas.cpp",
               "RelativeToolTip": "primer proyecto\\ColeccionReservas.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-04T05:23:39.803Z",
               "EditorCaption": ""
@@ -65,27 +65,27 @@
               "RelativeDocumentMoniker": "primer proyecto\\ColeccionReservas.h",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionReservas.h",
               "RelativeToolTip": "primer proyecto\\ColeccionReservas.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-04T05:21:50.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ColeccionClientes.cpp",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.cpp",
               "RelativeDocumentMoniker": "primer proyecto\\ColeccionClientes.cpp",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.cpp",
               "RelativeToolTip": "primer proyecto\\ColeccionClientes.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-08-31T03:34:26.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ColeccionCanchas.h",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionCanchas.h",
               "RelativeDocumentMoniker": "primer proyecto\\ColeccionCanchas.h",
@@ -98,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ColeccionClientes.h",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.h",
               "RelativeDocumentMoniker": "primer proyecto\\ColeccionClientes.h",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\ColeccionClientes.h",
               "RelativeToolTip": "primer proyecto\\ColeccionClientes.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-08-31T03:20:06.747Z",
               "EditorCaption": ""
@@ -117,9 +117,10 @@
               "RelativeDocumentMoniker": "primer proyecto\\Cliente.cpp",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\Cliente.cpp",
               "RelativeToolTip": "primer proyecto\\Cliente.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-08-31T03:17:41.949Z"
+              "WhenOpened": "2026-08-31T03:17:41.949Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -129,9 +130,10 @@
               "RelativeDocumentMoniker": "primer proyecto\\Cliente.h",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\Proyecto 1\\first-project\\primer proyecto\\primer proyecto\\Cliente.h",
               "RelativeToolTip": "primer proyecto\\Cliente.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-08-31T03:17:23.099Z"
+              "WhenOpened": "2026-08-31T03:17:23.099Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

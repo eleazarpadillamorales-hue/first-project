@@ -20,7 +20,7 @@ public:
     void agregarCliente(Cliente Cliente);
     Cliente buscarPorId(string id);
     //metodo para mostrar
-    void listaClientes();
-    int getCantidad();
+    void listaClientes() const;
+    int getCantidad() const;
 };
 

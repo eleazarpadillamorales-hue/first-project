@@ -15,15 +15,15 @@ Cliente::Cliente(string id, string nombre, string telefono) {
 }
 Cliente::~Cliente() {}
 // Métodos Getters (Consultores)
-string Cliente::getId(){
+string Cliente::getId() const {
     return id;
 }
 
-string Cliente::getNombre(){
+string Cliente::getNombre() const {
     return nombre;
 }
 
-string Cliente::getTelefono(){
+string Cliente::getTelefono() const{
     return telefono;
 }
 

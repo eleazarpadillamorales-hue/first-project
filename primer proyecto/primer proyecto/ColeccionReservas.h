@@ -21,5 +21,5 @@ public:
     Cliente* buscarPorId(string id);
     //metodo para mostrar
     void listaClientes();
-    int getCantidad();
+    int getCantidad() const;
 };
