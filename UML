@@ -1,0 +1,124 @@
+@startuml
+
+
+class Cancha {
+  - codigo: string
+  - deporte: string
+  - precioPorHora: double
+  - disponibilidad: char[12]
+  + Cancha(codigo: string, deporte: string, precio: double)
+  + getCodigo(): string
+  + getPrecioPorHora(): double
+  + mostrarDisponibilidad(): void
+  + cambiarEstadoFranja(pos: int, estado: char): bool
+  + setPrecioPorHora(precio: double): void
+}
+
+class Cliente {
+  - identificacion: string
+  - nombreCompleto: string
+  - telefono: string
+  + Cliente(id: string, nombre: string, tel: string)
+  + getIdentificacion(): string
+  + getNombreCompleto(): string
+}
+
+class Reserva {
+  - numeroReserva: int
+  - cliente: Cliente*
+  - cancha: Cancha*
+  - franjaInicial: int
+  - cantidadFranjas: int
+  - monto: double
+  - activa: bool
+  + Reserva(num: int, cli: Cliente*, can: Cancha*, inicio: int, cant: int)
+  + getNumeroReserva(): int
+  + getCliente(): Cliente*
+  + getCancha(): Cancha*
+  + getMonto(): double
+  + isActiva(): bool
+  + cancelar(): void
+}
+
+class RegistroEspera {
+  - consecutivo: int
+  - cliente: Cliente*
+  - cancha: Cancha*
+  - franjaHoraria: int
+  - estado: string
+  + RegistroEspera(num: int, cli: Cliente*, can: Cancha*, franja: int)
+  + getCliente(): Cliente*
+  + getCancha(): Cancha*
+  + getFranjaHoraria(): int
+  + getEstado(): string
+  + setEstado(nuevoEstado: string): void
+}
+
+class ColeccionCanchas {
+  - canchas: Cancha**
+  - cantidad: int
+  - capacidad: int
+  + ColeccionCanchas()
+  + agregarCancha(c: Cancha*): bool
+  + buscarCancha(codigo: string): Cancha*
+  + mostrarCanchas(): void
+}
+
+class ColeccionClientes {
+  - clientes: Cliente**
+  - cantidad: int
+  - capacidad: int
+  + ColeccionClientes()
+  + agregarCliente(c: Cliente*): bool
+  + buscarCliente(id: string): Cliente*
+  + mostrarClientes(): void
+}
+
+class ColeccionReservas {
+  - reservas: Reserva**
+  - cantidad: int
+  - capacidad: int
+  + ColeccionReservas()
+  + agregarReserva(r: Reserva*): bool
+  + buscarReserva(num: int): Reserva*
+  + mostrarReservasPorCliente(id: string): void
+  + mostrarReservasPorCancha(codigo: string): void
+}
+
+class ColeccionEspera {
+  - registros: RegistroEspera**
+  - cantidad: int
+  - capacidad: int
+  + ColeccionEspera()
+  + agregarEspera(r: RegistroEspera*): bool
+  + notificarCancelacion(codigoCancha: string, franja: int): void
+}
+
+class SistemaGestion {
+  - canchas: ColeccionCanchas
+  - clientes: ColeccionClientes
+  - reservas: ColeccionReservas
+  - espera: ColeccionEspera
+  + menuPrincipal(): void
+  + reporteCanchaMasReservada(): void
+  + reporteClienteMasReservas(): void
+  + reporteIngresoTotal(): void
+  + reportePorcentajeOcupacion(): void
+  + reporteHorasExtremas(): void
+}
+
+' Relaciones entre clases
+Reserva "1" --> "1" Cliente : referencia a >
+Reserva "1" --> "1" Cancha : referencia a >
+RegistroEspera "1" --> "1" Cliente : interesado >
+RegistroEspera "1" --> "1" Cancha : solicitada >
+
+ColeccionCanchas "1" *-- "0..10" Cancha : contiene
+ColeccionClientes "1" *-- "0..100" Cliente : contiene
+ColeccionReservas "1" *-- "0..120" Reserva : contiene
+ColeccionEspera "1" *-- "0..10" RegistroEspera : contiene
+
+SistemaGestion "1" *-- "1" ColeccionCanchas
+SistemaGestion "1" *-- "1" ColeccionClientes
+SistemaGestion "1" *-- "1" ColeccionReservas
+SistemaGestion "1" *-- "1" ColeccionEspera
