@@ -5,9 +5,9 @@
 
 DATOS DE LOS INTEGRANTES:
 ------------------------------------------------------------------------
-- Nombre: [Nombre Estudiante 1] | ID/Cédula: [Identificación 1]
-- Nombre: [Nombre Estudiante 2] | ID/Cédula: [Identificación 2]
-- Nombre: [Nombre Estudiante 3] | ID/Cédula: [Identificación 3]
+Eleazar Daniel Padilla Morales 402300795 
+Luis Andrés Segura Carballo 402320129
+Carlos Luis Solís Alonso 208300381
 
 DESCRIPCIÓN DEL PROYECTO:
 ------------------------------------------------------------------------
