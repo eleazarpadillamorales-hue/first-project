@@ -31,4 +31,5 @@ public:
     bool cambiarEstadoFranja(int indice, char nuevoEstado);
     // Calcula el porcentaje de franjas que NO están libres ('L')
     double calcularPorcentajeOcupacion();
+    void mostrar();
 };

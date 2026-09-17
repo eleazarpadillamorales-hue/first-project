@@ -69,3 +69,11 @@ double Cancha::calcularPorcentajeOcupacion(){
     }
     return (static_cast<double>(ocupadas) / 12.0) * 100.0;
 }
+
+void Cancha::mostrar() {
+    cout << "La informacion de la cancha es: " << endl;
+    cout << "Tipo de Deporte: " << tipoDeporte << endl;
+    cout << "Precio por hora: " << precioPorHora <<endl;
+    cout << "Disponibilidad: " << franjasHorarias << endl;
+
+}
