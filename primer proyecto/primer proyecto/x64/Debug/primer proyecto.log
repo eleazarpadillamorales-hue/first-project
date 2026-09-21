@@ -1,6 +1,2 @@
-﻿  Cancha.cpp
-  ColeccionCanchas.cpp
-  primer proyecto.cpp
-  Generando código...
-C:\Users\andre\OneDrive\Documents\Proyecto 1\first-project\primer proyecto\primer proyecto\ColeccionCanchas.cpp(35,1): warning C4715: 'ColeccionCanchas::buscarPorCodigo': no todas las rutas de acceso de control devuelven un valor
+﻿  primer proyecto.cpp
   primer proyecto.vcxproj -> C:\Users\andre\OneDrive\Documents\Proyecto 1\first-project\primer proyecto\x64\Debug\primer proyecto.exe
