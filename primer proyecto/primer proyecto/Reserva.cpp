@@ -1,29 +1,36 @@
-#include"Reserva.h"
+#pragma once
+#include <iostream>
+#include <string>
+#include "Cancha.h"
+#include "Cliente.h"
 
-Reserva::Reserva(){
-	numeroReserva = 0;
-	cliente = nullptr;
-	cancha = nullptr;
-	monto = 0;
-	activa = false;
-}
-Reserva::Reserva(Cliente* clientePtr, Cancha* canchaPtr, float monto){
-	this->numeroReserva = numeroReserva++;
-	this->cliente = clientePtr;
-	this->cancha = canchaPtr;
-	this->monto = monto;
-}
-// Getters
-int Reserva::getIdReserva() const { return numeroReserva; }
-Cliente* Reserva::getCliente() const { return this->cliente; }
-Cancha* Reserva::getCancha() const { return this->cancha; }
-float Reserva::getMonto() const { return monto; }
-bool Reserva::isActiva() const { return activa; }
-void Reserva::cancelar(){
-	activa = false;
-}
-void Reserva::mostrarInformacion() const{
-	cout << "Numero de la Reserva: " << numeroReserva << endl;
-	cout << " Estado de la Reserva: " << (activa ? "Activa" : "Cancelada") << endl;
-	cout << " | Monto Total de la reserva: $" << monto << endl;
-}
+using namespace std;
+
+class Reserva {
+private:
+    static int contadorConsecutivo; // Para generar el id autoincremental de forma global
+    int numeroReserva;
+    Cliente* cliente;
+    Cancha* cancha;
+    int franjaInicial;      
+    int cantidadFranjas;     
+    float monto;
+    bool activa;
+
+public:
+    Reserva();
+    Reserva(Cliente* clientePtr, Cancha* canchaPtr, int franjaInicial, int cantidadFranjas, float monto);
+
+    // Getters
+    int getIdReserva() const;
+    Cliente* getCliente() const;
+    Cancha* getCancha() const;
+    int getFranjaInicial() const;
+    int getCantidadFranjas() const;
+    float getMonto() const;
+    bool isActiva() const;
+
+    // Métodos de comportamiento
+    void cancelar();
+    void mostrarInformacion() const;
+};
