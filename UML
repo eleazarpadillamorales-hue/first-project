@@ -1,121 +1,169 @@
+@startuml centro_deportivo_zona_activa
+
+enum EstadoEspera {
+  ESPERANDO
+  ASIGNADO
+  CANCELADO
+}
+
 class Cancha {
-  - codigo: string
-  - deporte: string
-  - precioPorHora: double
-  - disponibilidad: char[12]
-  + Cancha(codigo: string, deporte: string, precio: double)
-  + getCodigo(): string
-  + getPrecioPorHora(): double
-  + mostrarDisponibilidad(): void
-  + cambiarEstadoFranja(pos: int, estado: char): bool
-  + setPrecioPorHora(precio: double): void
+  - codigo : string
+  - tipoDeporte : string
+  - precioPorHora : double
+  - franjasHorarias : char[12]
+  + Cancha()
+  + Cancha(codigo: string, tipoDeporte: string, precioPorHora: double)
+  + ~Cancha()
+  + getCodigo() : string
+  + getTipoDeporte() : string
+  + getPrecioPorHora() : double
+  + setPrecioPorHora(precioPorHora: double) : void
+  + getEstadoFranja(indice: int) : char
+  + cambiarEstadoFranja(indice: int, nuevoEstado: char) : bool
+  + calcularPorcentajeOcupacion() : double
+  + mostrarDisponibilidad() : void
+  + mostrar() : void
 }
 
 class Cliente {
-  - identificacion: string
-  - nombreCompleto: string
-  - telefono: string
-  + Cliente(id: string, nombre: string, tel: string)
-  + getIdentificacion(): string
-  + getNombreCompleto(): string
+  - id : string
+  - nombre : string
+  - telefono : string
+  + Cliente()
+  + Cliente(id: string, nombre: string, telefono: string)
+  + ~Cliente()
+  + getId() : string
+  + getNombre() : string
+  + getTelefono() : string
+  + setNombre(nombre: string) : void
+  + setTelefono(telefono: string) : void
+  + mostrar() : void
 }
 
 class Reserva {
-  - numeroReserva: int
-  - cliente: Cliente*
-  - cancha: Cancha*
-  - franjaInicial: int
-  - cantidadFranjas: int
-  - monto: double
-  - activa: bool
-  + Reserva(num: int, cli: Cliente*, can: Cancha*, inicio: int, cant: int)
-  + getNumeroReserva(): int
-  + getCliente(): Cliente*
-  + getCancha(): Cancha*
-  + getMonto(): double
-  + isActiva(): bool
-  + cancelar(): void
+  - idReserva : int
+  - cliente : Cliente*
+  - cancha : Cancha*
+  - franjaInicial : int
+  - cantidadFranjas : int
+  - monto : double
+  - activa : bool
+  - {static} contadorReservas : int
+  + Reserva(cliente: Cliente*, cancha: Cancha*, fInicio: int, cantFranjas: int, monto: double)
+  + ~Reserva()
+  + getIdReserva() : int
+  + getCliente() : Cliente*
+  + getCancha() : Cancha*
+  + getFranjaInicial() : int
+  + getCantiladFranjas() : int
+  + getMonto() : double
+  + isActiva() : bool
+  + cancelar() : void
+  + mostrarInformacion() : void
 }
 
 class RegistroEspera {
-  - consecutivo: int
-  - cliente: Cliente*
-  - cancha: Cancha*
-  - franjaHoraria: int
-  - estado: string
-  + RegistroEspera(num: int, cli: Cliente*, can: Cancha*, franja: int)
-  + getCliente(): Cliente*
-  + getCancha(): Cancha*
-  + getFranjaHoraria(): int
-  + getEstado(): string
-  + setEstado(nuevoEstado: string): void
+  - consecutivo : int
+  - cliente : Cliente*
+  - cancha : Cancha*
+  - franjaHoraria : int
+  - estado : EstadoEspera
+  - {static} contadorEspera : int
+  + RegistroEspera(cliente: Cliente*, cancha: Cancha*, franjaHoraria: int)
+  + ~RegistroEspera()
+  + getConsecutivo() : int
+  + getCliente() : Cliente*
+  + getCancha() : Cancha*
+  + getFranjaHoraria() : int
+  + getEstado() : EstadoEspera
+  + setEstado(nuevoEstado: EstadoEspera) : void
+  + mostrarRegistro() : void
 }
 
 class ColeccionCanchas {
-  - canchas: Cancha**
-  - cantidad: int
-  - capacidad: int
+  - canchas : Cancha*[10]
+  - cantidad : int
   + ColeccionCanchas()
-  + agregarCancha(c: Cancha*): bool
-  + buscarCancha(codigo: string): Cancha*
-  + mostrarCanchas(): void
+  + ~ColeccionCanchas()
+  + agregarCancha(canchaPtr: Cancha*) : bool
+  + buscarPorCodigo(codigo: string) : Cancha*
+  + listaCanchas() : void
+  + getCantidad() : int
+  + getCancha(indice: int) : Cancha*
 }
 
 class ColeccionClientes {
-  - clientes: Cliente**
-  - cantidad: int
-  - capacidad: int
+  - clientes : Cliente*[100]
+  - cantidad : int
   + ColeccionClientes()
-  + agregarCliente(c: Cliente*): bool
-  + buscarCliente(id: string): Cliente*
-  + mostrarClientes(): void
+  + ~ColeccionClientes()
+  + agregarCliente(clientePtr: Cliente*) : bool
+  + buscarPorId(id: string) : Cliente*
+  + listaClientes() : void
+  + getCantidad() : int
+  + getCliente(indice: int) : Cliente*
 }
 
 class ColeccionReservas {
-  - reservas: Reserva**
-  - cantidad: int
-  - capacidad: int
+  - reservas : Reserva*[120]
+  - cantidad : int
   + ColeccionReservas()
-  + agregarReserva(r: Reserva*): bool
-  + buscarReserva(num: int): Reserva*
-  + mostrarReservasPorCliente(id: string): void
-  + mostrarReservasPorCancha(codigo: string): void
+  + ~ColeccionReservas()
+  + agregarReserva(reservaPtr: Reserva*) : bool
+  + buscarPorNumero(numero: int) : Reserva*
+  + listarPorCliente(idCliente: string) : void
+  + listarPorCancha(codigoCancha: string) : void
+  + listarTodas() : void
+  + getCantidad() : int
+  + getReserva(indice: int) : Reserva*
 }
 
 class ColeccionEspera {
-  - registros: RegistroEspera**
-  - cantidad: int
-  - capacidad: int
+  - listaEspera : RegistroEspera*[100]
+  - cantidad : int
   + ColeccionEspera()
-  + agregarEspera(r: RegistroEspera*): bool
-  + notificarCancelacion(codigoCancha: string, franja: int): void
+  + ~ColeccionEspera()
+  + agregarEsperando(clientePtr: Cliente*, canchaPtr: Cancha*, franjaHoraria: int) : bool
+  + avisarClientesEnEspera(codigoCancha: string, franjaHoraria: int) : void
+  + buscarPorConsecutivo(consecutivo: int) : RegistroEspera*
+  + mostrarLista() : void
+  + getCantidad() : int
+  + getRegistro(indice: int) : RegistroEspera*
 }
 
-class SistemaGestion {
-  - canchas: ColeccionCanchas
-  - clientes: ColeccionClientes
-  - reservas: ColeccionReservas
-  - espera: ColeccionEspera
-  + menuPrincipal(): void
-  + reporteCanchaMasReservada(): void
-  + reporteClienteMasReservas(): void
-  + reporteIngresoTotal(): void
-  + reportePorcentajeOcupacion(): void
-  + reporteHorasExtremas(): void
+class SistemaCentroDeportivo {
+  - clientes : ColeccionClientes
+  - canchas : ColeccionCanchas
+  - reservas : ColeccionReservas
+  - listaEspera : ColeccionEspera
+  - limpiarConsola() : void
+  - pausarConsola() : void
+  - menuGestionCanchas() : void
+  - menuGestionClientes() : void
+  - menuGestionReservas() : void
+  - menuGestionEspera() : void
+  - menuReportesEstadisticas() : void
+  + SistemaCentroDeportivo()
+  + ~SistemaCentroDeportivo()
+  + ejecutar() : void
 }
 
-' Relaciones entre clases
-Reserva "1" --> "1" Cliente : referencia a >
-Reserva "1" --> "1" Cancha : referencia a >
-RegistroEspera "1" --> "1" Cliente : interesado >
-RegistroEspera "1" --> "1" Cancha : solicitada >
+' Relaciones de Asociación y Uso
+Reserva "0..*" --> "1" Cliente : cliente
+Reserva "0..*" --> "1" Cancha : cancha
+RegistroEspera "0..*" --> "1" Cliente : cliente
+RegistroEspera "0..*" --> "1" Cancha : cancha
+RegistroEspera --> EstadoEspera
 
+' Relaciones de Composición
 ColeccionCanchas "1" *-- "0..10" Cancha : contiene
 ColeccionClientes "1" *-- "0..100" Cliente : contiene
 ColeccionReservas "1" *-- "0..120" Reserva : contiene
-ColeccionEspera "1" *-- "0..10" RegistroEspera : contiene
+ColeccionEspera "1" *-- "0..100" RegistroEspera : contiene
 
-SistemaGestion "1" *-- "1" ColeccionCanchas
-SistemaGestion "1" *-- "1" ColeccionClientes
-SistemaGestion "1" *-- "1" ColeccionReservas
-SistemaGestion "1" *-- "1" ColeccionEspera
+SistemaCentroDeportivo "1" *-- "1" ColeccionCanchas
+SistemaCentroDeportivo "1" *-- "1" ColeccionClientes
+SistemaCentroDeportivo "1" *-- "1" ColeccionReservas
+SistemaCentroDeportivo "1" *-- "1" ColeccionEspera
+
+@enduml
