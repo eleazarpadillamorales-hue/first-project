@@ -6,30 +6,28 @@ using namespace std;
 
 class Cancha {
 private:
-    // Atributos privados
-    int codigo;
+    string codigo;
     string tipoDeporte;
     double precioPorHora;
-    char franjasHorarias[12]; // Representa 12 horas del día chambeando
+    char franjasHorarias[12]; // 12 franjas de 1 hora: [0] es 08:00-09:00 ... [11] es 19:00-20:00
 
 public:
-    // Constructor por defecto
     Cancha();
-    // Constructor con parámetros
-    Cancha(int codigo, string tipoDeporte, double precioPorHora);
-    // Destructor
+    Cancha(string codigo, string tipoDeporte, double precioPorHora);
     ~Cancha();
-    // Métodos Getters
-    int getCodigo();
-    string getTipoDeporte();
-    double getPrecioPorHora();
-    // Métodos Setters
+
+    // Getters y Setters
+    string getCodigo() const;
+    string getTipoDeporte() const;
+    double getPrecioPorHora() const;
     void setPrecioPorHora(double precioPorHora);
-    // Obtener el estado de una franja específica (índice 0 a 11)
-    char getEstadoFranja(int indice);
-    // Cambiar el estado de una franja (ej: 'L' por Libre, 'O' por Ocupada)
+
+    // Métodos para franjas horarias
+    char getEstadoFranja(int indice) const;
     bool cambiarEstadoFranja(int indice, char nuevoEstado);
-    // Calcula el porcentaje de franjas que NO están libres ('L')
-    double calcularPorcentajeOcupacion();
-    void mostrar();
+    
+    // Métodos de estadísticas y visualización
+    double calcularPorcentajeOcupacion() const;
+    void mostrarDisponibilidad() const;
+    void mostrar() const;
 };
