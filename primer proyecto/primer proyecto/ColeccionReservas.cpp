@@ -76,7 +76,7 @@ void ColeccionReservas::listarPorCliente(string idCliente) const {
     cout << "\n=== RESERVAS DEL CLIENTE ID: " << idCliente << " ===" << endl;
     for (int i = 0; i < cantidad; i++) {
         if (reservas[i] != nullptr && reservas[i]->getCliente() != nullptr) {
-            if (reservas[i]->getCliente()->getIdentificacion() == idCliente) {
+            if (reservas[i]->getCliente()->getId() == idCliente) {
                 reservas[i]->mostrarInformacion();
                 encontradas = true;
             }
