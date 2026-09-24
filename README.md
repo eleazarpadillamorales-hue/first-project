@@ -5,41 +5,46 @@
 
 DATOS DE LOS INTEGRANTES:
 ------------------------------------------------------------------------
-Eleazar Daniel Padilla Morales 402300795 
-Luis Andrés Segura Carballo 402320129
-Carlos Luis Solís Alonso 208300381
+Eleazar Daniel Padilla Morales  402300795 
+Luis Andrés Segura Carballo     402320129
+Carlos Luis Solís Alonso        208300381
 
 DESCRIPCIÓN DEL PROYECTO:
 ------------------------------------------------------------------------
-Aplicación de consola en C++ para la gestión de canchas, clientes, 
-reservas, lista de espera y reportes del centro deportivo Zona Activa 
-para una sola fecha de trabajo (12 franjas horarias de 08:00 a 20:00).
+Aplicación de consola en C++ orientada a objetos para la gestión integral 
+de canchas, clientes, reservas, listado de espera y reportes del centro 
+deportivo "Zona Activa" para una jornada diaria de 12 franjas horarias 
+(08:00 a 20:00).
 
 REQUISITOS TÉCNICOS Y ARQUITECTURA:
 ------------------------------------------------------------------------
-- Lenguaje: C++
-- Estructuras: Arreglos unidimensionales estáticos y de memoria dinámica.
-- POO: Encapsulamiento, punteros, relaciones entre objetos y clases 
-  colección personalizadas sin uso de la STL (std::vector, std::list, etc.).
+- Lenguaje: C++ (Estándar C++11 o superior).
+- Estructuras de Datos: Arreglos unidimensionales estáticos y de memoria 
+  dinámica mediante punteros.
+- Paradigma POO: Encapsulamiento, manejo dinámico de memoria (new/delete), 
+  relaciones de composición y asociación sin el uso de librerías STL 
+  (std::vector, std::list, etc.).
 
-ESTRUCTURA DE ARCHIVOS DE CÓDIGO FUENTE:
+ESTRUCTURA DE ARCHIVOS DEL CÓDIGO FUENTE:
 ------------------------------------------------------------------------
-- main.cpp                : Punto de entrada principal y control de menú.
-- Cancha.h / .cpp         : Modela la información y franjas horarias (L, O, M).
-- Cliente.h / .cpp        : Modela los datos de los clientes.
-- Reserva.h / .cpp        : Modela la reserva vinculando Cliente y Cancha.
-- ListaEspera.h / .cpp     : Modela los registros en lista de espera.
-- ColeccionCanchas.h/.cpp : Administración dinámica/arreglos de canchas.
-- ColeccionClientes.h/.cpp: Administración dinámica/arreglos de clientes.
-- ColeccionReservas.h/.cpp: Administración dinámica/arreglos de reservas.
-- ColeccionEspera.h/.cpp  : Administración del arreglo de lista de espera.
-- Sistema.h / .cpp        : Coordinador de módulos y reportes estadísticos.
+- main.cpp                     : Punto de entrada principal e inicializador del sistema.
+- Cancha.h / .cpp              : Entidad que modela la cancha y las 12 franjas horarias (L, O, M).
+- Cliente.h / .cpp             : Entidad que almacena los datos personales del cliente.
+- Reserva.h / .cpp             : Entidad que vincula a un Cliente y una Cancha en un horario.
+- RegistroEspera.h / .cpp      : Entidad para solicitudes de espera en franjas ocupadas.
+- ColeccionCanchas.h / .cpp    : Gestión dinámica del arreglo de canchas (Capacidad: 10).
+- ColeccionClientes.h / .cpp   : Gestión dinámica del arreglo de clientes (Capacidad: 100).
+- ColeccionReservas.h / .cpp   : Gestión dinámica del arreglo de reservas (Capacidad: 120).
+- ColeccionEspera.h / .cpp     : Gestión dinámica del arreglo de lista de espera (Capacidad: 100).
+- SistemaCentroDeportivo.h/.cpp: Controlador principal, gestión de submenús y módulo de reportes.
 
 INSTRUCCIONES DE COMPILACIÓN Y EJECUCIÓN:
 ------------------------------------------------------------------------
-1. Abrir el proyecto en el IDE correspondiente (p. ej. Visual Studio / CLion / Code::Blocks).
+1. Abrir el proyecto en el IDE de preferencia (Visual Studio, CLion, Code::Blocks, etc.).
 2. Asegurarse de incluir todos los archivos .h y .cpp en el target de compilación.
 3. Compilar el proyecto utilizando C++11 o superior.
-4. Ejecutar la aplicación de consola generada.
+   Comando g++ de consola:
+   g++ -std=c++11 main.cpp Cancha.cpp Cliente.cpp Reserva.cpp RegistroEspera.cpp ColeccionCanchas.cpp ColeccionClientes.cpp ColeccionReservas.cpp ColeccionEspera.cpp SistemaCentroDeportivo.cpp -o ZonaActiva
+4. Ejecutar el ejecutable generado (`./ZonaActiva` o `ZonaActiva.exe`).
 
 ========================================================================
