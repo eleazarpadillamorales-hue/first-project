@@ -1,26 +1,29 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include"Cancha.h"
+#include "Cancha.h"
 
 using namespace std;
-const int totalCanchas = 10;
 
-class ColeccionCanchas{
+//máximo de 10 canchas
+const int TOTAL_CANCHAS = 10;
+
+class ColeccionCanchas {
 private:
-    // Atributos privados
-    Cancha* canchas[totalCanchas];
+    Cancha* canchas[TOTAL_CANCHAS];
     int cantidad;
+
 public:
-    // Constructor por con parametros no se hace el por defecto porque no existe 
     ColeccionCanchas();
-    //Destructor
     ~ColeccionCanchas();
-    // metodos gettters y setters para esta clase
-    void agregarCancha(Cancha cancha);
-    Cancha buscarPorCodigo(int codigo);
-    //metodo para mostrar
+
+    // Métodos de gestión
+    bool agregarCancha(Cancha* nuevaCancha);
+    Cancha* buscarPorCodigo(string codigo); 
+    // Retorna puntero para permitir modificaciones reales
+
+    // Muestra y consultas
     void listaCanchas() const;
     int getCantidad() const;
+    Cancha* getCancha(int indice) const; 
 };
-
