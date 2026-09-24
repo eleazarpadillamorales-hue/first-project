@@ -4,23 +4,25 @@
 #include "Cliente.h"
 
 using namespace std;
-const int capacidad = 100;
 
-class ColeccionClientes{
+// El enunciado establece un máximo de 100 clientes
+const int CAPACIDAD_CLIENTES = 100;
+
+class ColeccionClientes {
 private:
-    // Atributos privados
-    Cliente* clientes[capacidad];
-    int cantidad;   
+    Cliente* clientes[CAPACIDAD_CLIENTES];
+    int cantidad;
+
 public:
-    // Constructor por con parametros no se hace el por defecto porque no existe 
     ColeccionClientes();
-    //Destructor
     ~ColeccionClientes();
-    // metodos gettters y setters para esta clase
-    void agregarCliente(Cliente Cliente);
-    Cliente buscarPorId(string id);
-    //metodo para mostrar
+
+    // Métodos de gestión de clientes
+    bool agregarCliente(Cliente* clientePtr);
+    Cliente* buscarPorId(string id) const;
+
+    // Métodos de visualización y consulta
     void listaClientes() const;
     int getCantidad() const;
+    Cliente* getCliente(int indice) const;
 };
-
