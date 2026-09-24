@@ -1,25 +1,32 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "Cliente.h"
+#include "Reserva.h"
 
 using namespace std;
-const int tam = 10; // tam = tamaño
 
-class ColeccionReservas{
+//máximo de 120 reservas
+const int TAM_RESERVAS = 120;
+
+class ColeccionReservas {
 private:
-    // Atributos privados
-    Cliente* clientes[tam];
+    Reserva* reservas[TAM_RESERVAS];
     int cantidad;
+
 public:
-    // Constructor por con parametros no se hace el por defecto porque no existe 
     ColeccionReservas();
-    //Destructor
     ~ColeccionReservas();
-    // metodos gettters y setters para esta clase
-    void agregarCliente(Cliente Cliente);
-    Cliente* buscarPorId(string id);
-    //metodo para mostrar
-    void listaClientes();
+
+    // Métodos de gestión
+    bool agregarReserva(Reserva* nuevaReserva);
+    Reserva* buscarPorNumero(int numeroReserva);
+
+    // Consultas
+    void listarTodas() const;
+    void listarPorCancha(string codigoCancha) const;
+    void listarPorCliente(string idCliente) const;
+
+    // Métodos utilitarios y reportes
     int getCantidad() const;
+    Reserva* getReserva(int indice) const;
 };
